@@ -7,5 +7,5 @@ data2<-data.df[data.df$Date == as.Date("2007-02-01"), ]
 dataset<-rbind(data1,data2)
 
 hist(as.numeric(dataset$Global_active_power), col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
-dev.copy(png,file="plot1.png")
+dev.copy(png,file="plot1.png", width=480, height=480)
 dev.off()
